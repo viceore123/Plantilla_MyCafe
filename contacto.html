@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contacto | MyCafé</title>
+    <meta
+        name="description"
+        content="Contacta con MyCafé para realizar consultas, preguntar por reservas o proponer una colaboración."
+    >
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/imgs/logocafe.jpg"
+    >
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div id="navbar-container"></div>
+
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+
+        <img src="assets/imgs/paseolaspalmas.jpg" alt="">
+
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <div class="hero-text">
+            <h1 id="hero-title">Hablemos</h1>
+
+            <p>
+                ¿Tienes alguna pregunta, una idea o simplemente
+                quieres saber más? ¡Estamos para escucharte!
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <section class="contact-page" aria-labelledby="contact-title">
+
+            <div class="contact-heading">
+                <span class="contact-eyebrow">Estamos aquí para ti</span>
+
+                <h2 id="contact-title">Ponte en contacto con nosotros</h2>
+
+                <p>
+                    Escríbenos y cuéntanos en qué podemos ayudarte.
+                    Te dejamos distintas formas de contactarnos.
+                </p>
+            </div>
+
+
+            <div class="contact-layout">
+
+                <!-- FORMULARIO -->
+                <section class="contact-form-card" aria-labelledby="form-title">
+
+                    <h3 id="form-title">Envíanos un mensaje</h3>
+
+                    <p class="contact-form-intro">
+                        Completa los siguientes campos y cuéntanos qué necesitas.
+                    </p>
+
+                    <!--
+                        Para recibir mensajes reales, reemplaza la URL de ejemplo
+                        del atributo action por la dirección que te entregue
+                        tu servicio de formularios.
+                    -->
+                    <form
+                        class="contact-form"
+                        action="https://formspree.io/f/TU_ID_DE_FORMULARIO"
+                        method="POST"
+                    >
+
+                        <div class="contact-field">
+                            <label for="contact-name">Nombre</label>
+                            <input
+                                type="text"
+                                id="contact-name"
+                                name="nombre"
+                                placeholder="¿Cómo te llamas?"
+                                autocomplete="name"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="contact-field">
+                            <label for="contact-email">Correo electrónico</label>
+                            <input
+                                type="email"
+                                id="contact-email"
+                                name="email"
+                                placeholder="tunombre@ejemplo.com"
+                                autocomplete="email"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="contact-field">
+                            <label for="contact-reason">Motivo del mensaje</label>
+
+                            <select
+                                id="contact-reason"
+                                name="motivo"
+                                required
+                            >
+                                <option value="" disabled selected>
+                                    Selecciona una opción
+                                </option>
+                                <option value="consulta">Consulta general</option>
+                                <option value="reservas">Reservas o eventos</option>
+                                <option value="productos">Consulta sobre productos</option>
+                                <option value="colaboracion">Propuesta de colaboración</option>
+                                <option value="otro">Otro motivo</option>
+                            </select>
+                        </div>
+
+
+                        <div class="contact-field">
+                            <label for="contact-message">Tu mensaje</label>
+                            <textarea
+                                id="contact-message"
+                                name="mensaje"
+                                rows="6"
+                                placeholder="Cuéntanos cómo podemos ayudarte..."
+                                required
+                            ></textarea>
+                        </div>
+
+
+                        <button type="submit" class="contact-submit">
+                            Enviar mensaje →
+                        </button>
+
+                        <p class="contact-privacy-note">
+                            Utilizaremos tus datos únicamente para responder
+                            a tu consulta.
+                        </p>
+
+                    </form>
+
+                </section>
+
+
+                <!-- INFORMACION DE CONTACTO -->
+                <aside class="contact-info-card" aria-labelledby="info-title">
+
+                    <h3 id="info-title">También puedes encontrarnos aquí</h3>
+
+                    <p class="contact-info-intro">
+                        ¿Prefieres contactarnos directamente o visitarnos?
+                        Estas son nuestras opciones.
+                    </p>
+
+
+                    <div class="contact-info-item">
+                        <span class="contact-info-icon" aria-hidden="true">
+                            ✉
+                        </span>
+
+                        <div>
+                            <h4>Correo electrónico</h4>
+                            <p>
+                                <a href="mailto:contacto@mycafe.cl"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >
+                                    contacto@mycafe.cl
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="contact-info-item">
+                        <span class="contact-info-icon" aria-hidden="true">
+                            ☎
+                        </span>
+
+                        <div>
+                            <h4>Teléfono | WhatsApp</h4>
+                            <p>
+                                <a href="https://www.whatsapp.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    +56 9 1223 3445
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="contact-info-item">
+                        <span class="contact-info-icon" aria-hidden="true">
+                            ⌖
+                        </span>
+
+                        <div>
+                            <h4>Visítanos</h4>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Av.+Nueva+Providencia+2212+Local+216+Santiago+Chile" 
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Av. Nueva Providencia 2212, Local 216
+                            </a>
+                            <p class="contact-info-detail">
+                                Cerca del Metro Los Leones.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="contact-info-item">
+                        <span class="contact-info-icon" aria-hidden="true">
+                            ◷
+                        </span>
+
+                        <div>
+                            <h4>Horario de atención</h4>
+                            <p>Lunes a viernes: 08:00–20:00</p>
+                            <p>Sábados y domingos: 09:00–19:00</p>
+                        </div>
+                    </div>
+
+
+                    <div class="contact-info-divider"></div>
+
+                    <p class="contact-social-title">
+                        Síguenos en redes sociales
+                    </p>
+
+                    <div class="contact-social-links">
+                        <a
+                            href="https://www.instagram.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Instagram ↗
+                        </a>
+
+                        <a
+                            href="https://www.facebook.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Facebook ↗
+                        </a>
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+
+        <!-- CIERRE -->
+        <section class="contact-closing">
+            <h2>Gracias por pensar en MyCafé</h2>
+
+            <p>
+                Nos alegra ser parte de tus momentos.
+                ¡Esperamos saber pronto de ti!
+            </p>
+
+            <a href="menu.html" class="contact-closing-button">
+                Mientras tanto, descubre nuestro menú →
+            </a>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <div id="footer-container"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

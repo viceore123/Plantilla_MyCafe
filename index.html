@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Disfruta de café artesanal, bebidas y pastelería en MyCafé."
+    >
+
+    <title>MyCafé | Café y pastelería</title>
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/imgs/logocafe.jpg"
+    >
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navegación compartida -->
+    <div id="navbar-container"></div>
+
+    <main>
+
+        <!-- Hero principal -->
+        <section class="hero" aria-labelledby="hero-title">
+
+            <img
+                src="assets/imgs/cafeteria1.jpg"
+                alt=""
+            >
+
+            <div class="hero-overlay" aria-hidden="true"></div>
+
+            <div class="hero-text">
+                <h1 id="hero-title">¡Bienvenidos a MyCafé!</h1>
+
+                <p>
+                    Disfruta de tus bebidas calientes favoritas
+                    y deliciosos postres caseros con nosotros.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- Categorías destacadas -->
+        <section class="antojo" aria-labelledby="antojo-title">
+
+            <h2 id="antojo-title">¿Qué se te antoja hoy?</h2>
+
+            <div class="cards">
+
+                <!-- Tarjeta de cafés -->
+                <a href="menu.html" class="card">
+
+                    <div class="carousel" aria-hidden="true">
+                        <img src="assets/imgs/ph-item-1.jpg" alt="" >
+
+                        <img src="assets/imgs/ph-item-2.jpg" alt="" >
+
+                        <img src="assets/imgs/ph-item-3.jpg" alt="" >
+
+                    </div>
+
+                    <div class="card-overlay">
+                        <span>Ver en el menú</span>
+                    </div>
+
+                    <div class="card-text">
+                        <h3>Cafés</h3>
+                        <p>Descubre nuestra selección.</p>
+                    </div>
+
+                </a>
+
+
+                <!-- Tarjeta de pastelería -->
+                <a href="menu.html" class="card">
+
+                    <div class="carousel" aria-hidden="true">
+                        <img src="assets/imgs/ph-item-4.jpg" alt="" >
+
+                        <img src="assets/imgs/ph-item-5.jpg" alt="" >
+
+                        <img src="assets/imgs/ph-item-6.jpg" alt="" >
+
+                    </div>
+
+                    <div class="card-overlay">
+                        <span>Ver en el menú</span>
+                    </div>
+
+                    <div class="card-text">
+                        <h3>Pastelería</h3>
+                        <p>Algo dulce para acompañar.</p>
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Presentación de la cafetería -->
+        <section class="aboutus" aria-labelledby="about-title">
+
+            <h2 id="about-title">¿Qué es MyCafé?</h2>
+
+            <div class="about-content">
+
+                <div class="about-text">
+
+                    <p>
+                        Somos una cafetería dedicada a ofrecer café
+                        artesanal y productos preparados con mucho
+                        cariño y de manera casera.
+                    </p>
+
+                    <p>
+                        Nuestro objetivo es crear un espacio tranquilo
+                        donde puedas disfrutar de algo rico y pasar
+                        un buen momento, solo o acompañado.
+                    </p>
+
+                    <p>
+                        ¡Ven a disfrutar de tus bebidas y postres
+                        favoritos en MyCafé!
+                    </p>
+
+                </div>
+
+                
+                <a href="aboutus.html" class="about-image-link">
+                    <img src="assets/imgs/cafeteria1.jpg"
+                        alt="Interior de MyCafé"
+                        loading="lazy"
+                    >
+
+                    <div class="about-image-overlay">
+                        <span>Conoce nuestra historia →</span>
+                    </div>
+                </a>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- Dirección y horarios -->
+        <section class="ubicacion" aria-labelledby="ubicacion-title">
+
+            <h2 id="ubicacion-title">¿Dónde estamos?</h2>
+
+            <div class="ubi-content">
+
+                <div class="ubi-text">
+
+                    <p>
+                        Nos ubicamos en Av. Nueva Providencia 2212,
+                        Local 216. Puedes llegar desde el metro
+                        Los Leones, Línea 1, saliendo por el Paseo
+                        Las Palmas y subiendo las escaleras del portal.
+                        ¡Estamos en el segundo piso!
+                    </p>
+
+                    <div class="horarios">
+
+                        <h3>Horarios de atención</h3>
+
+                        <ul>
+                            <li>
+                                <strong>Lunes a viernes:</strong>
+                                8:00 a 18:00
+                            </li>
+
+                            <li>
+                                <strong>Sábados, domingos y feriados:</strong>
+                                9:00 a 20:00
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <p>¡Te esperamos!</p>
+
+                    <!-- Sustituir por el enlace real de Google Maps -->
+                    <a
+                        class="map-link"
+                        href="https://www.google.com/maps/search/?api=1&query=Av.+Nueva+Providencia+2212+Local+216+Santiago+Chile"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Cómo llegar
+                    </a>
+
+                </div>
+
+
+                <!-- Mapa de ubicación -->
+                <div class="mapa">
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.041419957054!2d-70.61187912506087!3d-33.42216447340073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cfb03eb591c7%3A0xd7b37e1253dc0ff0!2sMAI%20House%20Cafe!5e0!3m2!1ses!2scl!4v1791485394155!5m2!1ses!2scl"
+                        title="Ubicación de la cafetería en Google Maps"
+                        loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                    ></iframe>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        
+        <section class="contact-cta" aria-labelledby="contact-cta-title">
+
+            <div class="contact-cta-banner">
+
+                <img
+                    src="assets/imgs/paseolaspalmas.jpg"
+                    alt=""
+                    class="contact-cta-image"
+                    loading="lazy"
+                >
+
+                <div class="contact-cta-overlay"></div>
+
+                <div class="contact-cta-content">
+                    <h2 id="contact-cta-title">
+                        ¿Tienes dudas? ¡Hablemos!
+                    </h2>
+
+                    <p>
+                        ¿Quieres organizar un evento, consultar por
+                        reservas o proponer una colaboración?
+                        ¡Nos encantaría escucharte!
+                    </p>
+
+                    <a href="contacto.html" class="contact-cta-button">
+                        Contáctanos →
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Pie de página compartido -->
+    <div id="footer-container"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
